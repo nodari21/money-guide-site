@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ფულის გამომუშავების მოკლე გზები</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8dc;
+      color: #333;
+      margin: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 { color: #b8860b; }
+    .btn-buy {
+      background-color: #b8860b;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      margin-top: 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .full-content { display: none; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>ფულის გამომუშავების მოკლე გზები</h1>
+  <p>სრულ მასალაზე წვდომა ფასიანია.</p>
+  <button class="btn-buy" onclick="show()">გადაიხადე $2.99 და იხილე სრული ტექსტი</button>
+  <div class="full-content" id="full">
+    <p>1. დაიწყე ფრილანსი<br>2. გაყიდე შენი უნარები<br>3. შექმენი ონლაინ მაღაზია<br>4. განათლება = მოგება</p>
+  </div>
+  <script>
+    function show() {
+      alert("გადახდის შემდეგ გიჩვენებთ სრულ ტექსტს.");
+      document.getElementById("full").style.display = "block";
+    }
+  </script>
+</body>
+</html>
